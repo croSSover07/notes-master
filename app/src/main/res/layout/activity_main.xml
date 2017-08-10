@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="@dimen/tool_bar_top_padding"
+        android:transitionName="actionBar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/text_main_page"
+            android:layout_marginTop="25dp"
+            android:text="Keep Your Recordings"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/picture_main_page"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:src="@drawable/notes"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="95dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/text_make_notes"
+            android:layout_marginTop="65dp"
+            android:text="Make Notes and ToDo tasks"
+            android:textSize="23dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/picture2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/todo"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="305dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
